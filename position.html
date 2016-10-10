@@ -7,7 +7,6 @@
 	if(navigator.geolocation){
 		navigator.geolocation.watchPosition(function(ev){
 			var msg = ev.coords;
-			console.log(msg)		
 		},function(ev){
 			alert('失败')
 		})
