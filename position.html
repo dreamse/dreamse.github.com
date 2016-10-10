@@ -15,7 +15,7 @@
 		navigator.geolocation.watchPosition(function(ev){
 			var msg = ev.coords;
 			for(var name in msg){
-				document.write(name + ':' + json[name] + '<br />');
+				document.write(name + ':' + msg[name] + '<br />');
 			}		
 		},function(){
 			alert('失败')	
